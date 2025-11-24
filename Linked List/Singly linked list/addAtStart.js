@@ -1,0 +1,52 @@
+class Node {
+  constructor(data) {
+    // 1. Stores the actual data (or value)
+    this.data = data;
+    // 2. Stores the reference (pointer) to the next node.
+    // It is initialized to null because a new node starts unlinked.
+    this.next = null;
+  }
+}
+
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  // Inserts a new node at the beginning of the list (O(1) operation).
+  insertAtHead(data) {
+    // 1. Create the new node
+    const newNode = new Node(data);
+    //setting the address of head to new node
+    newNode.next = this.head;
+    //setting the new node as head
+    this.head = newNode;
+  }
+
+  //print a linked list
+  printNode() {
+    let output = "";
+    let current = this.head;
+    // 2. Loop until the current pointer is null (the end of the list)
+    while (current !== null) {
+      output += current.data;
+      if (current.next !== null) {
+        output += "->";
+      }
+      //move to next node
+      current = current.next;
+    }
+    console.log(output);
+  }
+}
+
+const obj = new LinkedList();
+obj.insertAtHead(20);
+obj.insertAtHead(30);
+obj.insertAtHead(40);
+obj.insertAtHead(60);
+obj.insertAtHead(70);
+obj.printNode();
+obj.insertAtHead(80);
+obj.insertAtIndex(10,2)
+obj.printNode();
