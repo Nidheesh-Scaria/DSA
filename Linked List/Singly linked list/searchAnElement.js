@@ -10,7 +10,7 @@ class LinkedList {
     this.head = null;
   }
 
-  push(data) {
+  addAtEnd(data) {
     const newNode = new Node(data);
     if (!this.head) {
       this.head = newNode;
@@ -73,7 +73,7 @@ class LinkedList {
 
 const list = new LinkedList();
 let arr=[-10,25,4,78,2,1,79,254,112]
-arr.forEach(x=>list.push(x))
+arr.forEach(x=>list.addAtEnd(x))
 console.log("List");
 list.print();
 list.searchData(5);

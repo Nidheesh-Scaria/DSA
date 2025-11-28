@@ -9,7 +9,7 @@ class LinkedList {
     this.head = null;
   }
 
-  append(data) {
+  addAtStart(data) {
     const newNode = new Node(data);
     newNode.next = this.head;
     this.head = newNode;
@@ -60,14 +60,9 @@ class LinkedList {
   }
 }
 
-const list=new LinkedList()
-list.append(-21)
-list.append(2)
-list.append(3)
-list.append(4)
-list.append(5)
-list.append(6)
-list.append(87)
+let arr = [10, 5, 8, 42, 45, 19, 75, 28, 12, 24, 54, 1, 0];
+const list = new LinkedList();
+arr.forEach((x) => list.addAtStart(x));
 
 list.print()
 list.deleteAtPosition(3)

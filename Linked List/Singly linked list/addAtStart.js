@@ -14,7 +14,7 @@ class LinkedList {
   }
 
   // Inserts a new node at the beginning of the list (O(1) operation).
-  insertAtHead(data) {
+  addAtStart(data) {
     // 1. Create the new node
     const newNode = new Node(data);
     //setting the address of head to new node
@@ -41,12 +41,12 @@ class LinkedList {
 }
 
 const obj = new LinkedList();
-obj.insertAtHead(20);
-obj.insertAtHead(30);
-obj.insertAtHead(40);
-obj.insertAtHead(60);
-obj.insertAtHead(70);
+obj.addAtStart(20);
+obj.addAtStart(30);
+obj.addAtStart(40);
+obj.addAtStart(60);
+obj.addAtStart(70);
 obj.printNode();
-obj.insertAtHead(80);
+obj.addAtStart(80);
 obj.insertAtIndex(10,2)
 obj.printNode();
