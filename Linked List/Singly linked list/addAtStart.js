@@ -38,6 +38,16 @@ class LinkedList {
     }
     console.log(output);
   }
+  reversePrint() {
+    let list = [];
+    let current = this.head;
+    while (current) {
+      list.push(current.data);
+
+      current = current.next;
+    }
+    console.log(list.reverse().join("-> "));
+  }
 }
 
 const obj = new LinkedList();
@@ -48,5 +58,6 @@ obj.addAtStart(60);
 obj.addAtStart(70);
 obj.printNode();
 obj.addAtStart(80);
-obj.insertAtIndex(10,2)
+obj.insertAtIndex(10, 2);
 obj.printNode();
+obj.reversePrint()
