@@ -17,4 +17,4 @@ function findLastOccurenceOfTargert(arr,target){
 }
 
 let arr = [1,2,2,2,2,2,2,3,3,4,5,6,6,7];
-console.log(findLastOccurenceOfTargert(arr,2))
+console.log(findLastOccurenceOfTargert(arr,6))

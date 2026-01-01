@@ -76,7 +76,7 @@ class DoublyLinkedList {
     console.log(list);
   }
 }
-//3
+
 let arr = [75, 28, 12, , 24, 54, 1, 25, 35];
 const list = new DoublyLinkedList();
 arr.forEach((x) => list.addAtHead(x));
