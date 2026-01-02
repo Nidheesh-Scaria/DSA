@@ -16,6 +16,7 @@ function bubbleSortAscendingOne(arr) {
   }
   return arr;
 }
+//abnother forloop method
 function bubbleSortAscendingTwo(arr) {
   let noSwap;
   for (let i = 0; i < arr.length - 1; i++) {
